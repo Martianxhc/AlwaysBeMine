@@ -59,4 +59,21 @@ body {
   animation: fadeIn 0.6s ease-out forwards;
 }
 
+/* 轻微闪光动画：一条斜向高光从左至右掠过 */
+@keyframes waxShine {
+  0%   { transform: translateX(-120%) skewX(-15deg); opacity: 0; }
+  25%  { opacity: 0.55; }
+  100% { transform: translateX(140%)  skewX(-15deg); opacity: 0; }
+}
+
+/* 可复用的动画类 */
+.animate-wax-shine {
+  animation: waxShine 2.2s ease-in-out infinite;
+  animation-delay: 3s;            /* 开始前延迟，别太突兀 */
+}
+
+/* 减少动画偏好时自动关闭 */
+@media (prefers-reduced-motion: reduce) {
+  .animate-wax-shine { animation: none !important; }
+}
 
