@@ -103,7 +103,7 @@ export default function Page() {
 <div className="absolute -bottom-6 -right-6 w-24 h-24 drop-shadow-xl rotate-[-8deg]">
   {/* 蜡印本体 */}
   <img
-    src="/assets/wax-seal-gold.png"
+    src="{waxSeal}"
     alt="Wax Seal"
     className="w-full h-full select-none pointer-events-none"
     draggable="false"
