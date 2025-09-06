@@ -54,33 +54,71 @@ export default function Page() {
           </>
         ) : (
           // 展开后的信件卡片（含淡入动画）
-          <div className="bg-white/90 backdrop-blur-md rounded-2xl shadow-xl border border-rose-200 p-6 max-w-2xl text-left overflow-y-auto max-h-[70vh] opacity-0 scale-95 animate-fadeIn">
-            <h2 className="text-2xl font-bold text-rose-600 mb-4 text-center">
-              A la persona más especial
-            </h2>
-            <p>Laia, gracias. Deseo ser la persona más importante en tu corazón.</p>
-            <p>Hoy pedí demasiado y te hice llorar, lo siento. Escribo estas palabras como una forma de redimirme.</p>
-            <p>
-              Eres la chica más especial que he conocido. Tu manera de pensar, tus hábitos, tus gustos e incluso tu
-              historia me resultan únicos. Por fuera pareces independiente, pero siento la ternura en tu interior, y
-              eso despierta en mí el deseo de ser tu apoyo y darte seguridad.
-            </p>
-            <p>
-              Tú buscas una vida sencilla, y en eso coincidimos. Yo, que he visto demasiadas sombras del mundo —el
-              engaño, el interés egoísta—, también anhelo llevar una vida simple y auténtica.
-            </p>
-            <p>
-              Encontrarte me hizo crecer. En España pasé momentos difíciles: un país desconocido, el idioma, el trabajo.
-              Fuiste tú quien me devolvió la fuerza. Sé que te expresas más con acciones que con palabras y que, ante la
-              presión, a veces te proteges con la evasión. Que puedas enfadarte conmigo me hace sentir que estoy
-              entrando en tu mundo y que te sientes segura a mi lado.
-            </p>
-            <p>
-              Si nuestro destino continúa, cuidaré de esta relación con todo mi corazón. Si no, te deseo lo mejor,
-              siempre. Perdóname, Laia. Te amo.
-            </p>
-            <p className="text-right mt-4">—— Tu pequeño caballito 🐎</p>
-          </div>
+<div className="bg-white/90 backdrop-blur-md rounded-2xl shadow-xl border border-rose-200 p-6 max-w-2xl text-left overflow-y-auto max-h-[70vh] opacity-0 scale-95 animate-fadeIn leading-relaxed">
+  <h2 className="text-2xl font-bold text-rose-600 mb-6 text-center">Para Laia</h2>
+
+  <p className="mb-4">
+    Laia, gracias. Cuánto deseo ser la persona que más importa en tu corazón.
+    Hoy te pedí algo exagerado y volviste a llorar por mi culpa. Me duele y me
+    siento culpable. Escribo estas palabras como una forma de redimirme.
+  </p>
+
+  <p className="mb-4">
+    Eres la chica más especial que he conocido. Tu manera de pensar, tus hábitos
+    de vida, tus intereses e incluso tu historia me resultan únicos y
+    fascinantes. Por fuera pareces muy independiente, pero siento la ternura de
+    tu interior, y eso despierta en mí el deseo de ser tu apoyo y darte
+    seguridad.
+  </p>
+
+  <p className="mb-4">
+    Tú buscas una vida sencilla, y en eso coincidimos. Yo, que desde hace
+    tiempo he visto demasiadas sombras de la humanidad —el engaño, el interés
+    egoísta, la lucha constante— también anhelo llevar una vida y un proyecto
+    simples y auténticos.
+  </p>
+
+  <p className="mb-4">
+    Encontrarte fue una suerte, y también un espejo en el que vi mis carencias:
+    inseguridad, celos, deseos y ambiciones que a veces me hicieron perder el
+    rumbo. Pero gracias a ti sigo aprendiendo y creciendo. Tu amor por tu patria
+    me hizo replantear mi interior y aprender a mirar el mundo con una visión
+    más amplia.
+  </p>
+
+  <p className="mb-4">
+    Durante estos meses en España pasé por momentos difíciles: un país
+    desconocido, el idioma, los fracasos en el trabajo. Fuiste tú quien me
+    devolvió la confianza y me animó a enfrentar la vida con valentía.
+  </p>
+
+  <p className="mb-4">
+    También sé que en el amor no hablas mucho, sino que prefieres expresarte con
+    acciones. Y cuando llega la presión, sueles huir para protegerte. Y sé que
+    conmigo te permites enfadarte, mostrar tu verdadero yo. Eso me hace sentir
+    que poco a poco he entrado en tu mundo. Que puedas enojarte conmigo
+    significa que te sientes segura, y eso, en realidad, me alegra. No quiero
+    exigirte nada; solo deseo ser mejor persona, alguien digno de tu confianza,
+    capaz de darte tranquilidad y felicidad.
+  </p>
+
+  <p className="mb-4">
+    Tal vez mi cariño y mi dependencia hayan sido una carga para ti, pero
+    créeme: tu sinceridad y tu pasión derritieron el hielo de mi corazón.
+  </p>
+
+  <p className="mb-4 font-medium text-rose-700">
+    Si nuestro destino continúa, me esforzaré por cuidar y hacer crecer nuestra
+    relación. Y si el destino llega a su fin, de todo corazón deseo que estés
+    bien. Pase lo que pase, siempre ocuparás un lugar muy especial en mi
+    corazón.
+  </p>
+
+  <p className="mt-6">Perdóname, Laia.</p>
+  <p>Te amo, Laia.</p>
+
+  <p className="text-right mt-6 font-semibold">— Xiaomache 🐎</p>
+</div>
         )}
       </div>
     </>
