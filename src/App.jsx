@@ -60,6 +60,15 @@ export default function Page() {
         ) : (
           // 展开后的信件卡片（含淡入动画）
 <div className="bg-gradient-to-b from-pink-50 to-white backdrop-blur-md rounded-3xl shadow-xl border border-rose-200 p-8 max-w-3xl text-left overflow-y-auto max-h-[80vh] animate-fadeIn leading-relaxed">
+
+  {/* 背景水印 */}
+  <img
+    src={waxSeal}
+    alt="Watermark"
+    className="absolute inset-0 m-auto w-64 h-64 opacity-10 select-none pointer-events-none"
+    draggable="false"
+    style={{ filter: "blur(1px)" }}
+  />
     {/* 西语标题 */}
     <h2 className="text-2xl font-bold text-rose-600 mb-4 text-center">Para Laia 💌</h2>
 
