@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Spline from "@splinetool/react-spline";
-import waxSeal from "./assets/wax-seal-gold.png";
+
 // 方式A：Vite 推荐
 const waxSeal = new URL("./assets/wax-seal-gold.png", import.meta.url).href;
 console.log("waxSeal url →", waxSeal);
