@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Spline from "@splinetool/react-spline";
 import waxSeal from "./assets/wax-seal-gold.png";
-
+// 方式A：Vite 推荐
+const waxSeal = new URL("./assets/wax-seal-gold.png", import.meta.url).href;
+console.log("waxSeal url →", waxSeal);
 <img src={waxSeal} alt="Wax Seal" className="w-24 h-24" />
 
 // 重新用回项目里的小熊/爱心资源
