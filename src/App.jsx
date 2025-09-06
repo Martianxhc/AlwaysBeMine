@@ -102,7 +102,7 @@ export default function Page() {
   
   {/* 浮动蜡印 */}
   {/* 浮动蜡印（绝对定位 + 微旋转） */}
-<div className="absolute -bottom-6 -right-6 w-24 h-24 drop-shadow-xl rotate-[-8deg]">
+<div className="absolute -bottom-3 -right-3 w-24 h-24 drop-shadow-xl rotate-[-8deg]">
   {/* 蜡印本体 */}
   <img
     src={waxSeal}
