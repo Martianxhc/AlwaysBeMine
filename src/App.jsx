@@ -94,6 +94,31 @@ export default function Page() {
     </p>
     <p className="mt-4">对不起，Laia。<br/>我爱你，Laia。</p>
     <p className="text-right mt-6 font-semibold italic">—— 小马车 🐎</p>
+  <p className="text-right mt-6 font-semibold italic">—— 小马车 🐎</p>
+
+  {/* 浮动蜡印 */}
+  {/* 浮动蜡印（绝对定位 + 微旋转） */}
+<div className="absolute -bottom-6 -right-6 w-24 h-24 drop-shadow-xl rotate-[-8deg]">
+  {/* 蜡印本体 */}
+  <img
+    src="/assets/wax-seal-gold.png"
+    alt="Wax Seal"
+    className="w-full h-full select-none pointer-events-none"
+    draggable="false"
+  />
+
+  {/* 高光覆盖层（不影响点击） */}
+  <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-full">
+    <div
+      className="animate-wax-shine absolute top-0 left-0 h-full w-1/3 bg-white/35 blur-md"
+      style={{
+        /* 让高光条有点金属感 */
+        mixBlendMode: "screen",
+        boxShadow: "0 0 20px rgba(255,255,255,0.25)",
+      }}
+    />
+  </div>
+</div>
   </div>
         )}
       </div>
