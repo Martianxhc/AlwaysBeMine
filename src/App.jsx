@@ -1,4 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
+// 在现有的 useState 列表附近添加
+const [showLetter, setShowLetter] = useState(false);
+
 import Spline from "@splinetool/react-spline";
 import Swal from "sweetalert2";
 import { BsVolumeUpFill, BsVolumeMuteFill } from "react-icons/bs";
@@ -320,18 +323,37 @@ export default function Page() {
 
       <div className="overflow-hidden flex flex-col items-center justify-center pt-4 h-screen -mt-16 selection:bg-rose-600 selection:text-white text-zinc-900">
         {yesPressed && noCount>3 ? (
-          <>
-            <img
-              ref={gifRef}
-              className="h-[230px] rounded-lg"
-              src={YesGifs[currentGifIndex]}
-              alt="Yes Response"
-            />
-            <div className="text-4xl md:text-6xl font-bold my-2" style={{ fontFamily: "Charm, serif", fontWeight: "700", fontStyle: "normal" }}>I Love You !!!</div>
-            <div  className="text-4xl md:text-4xl font-bold my-1" style={{ fontFamily: "Beau Rivage, serif", fontWeight: "500", fontStyle: "normal" }}> You’re the love of my life. </div> 
-            <WordMareque />
-          </>
-        ) : (
+  <>
+    <img
+      ref={gifRef}
+      className="h-[230px] rounded-lg"
+      src={YesGifs[currentGifIndex]}
+      alt="Yes Response"
+    />
+    <div className="text-4xl md:text-6xl font-bold my-2" style={{ fontFamily: "Charm, serif", fontWeight: "700", fontStyle: "normal" }}>
+      I Love You !!!
+    </div>
+    <div className="text-4xl md:text-4xl font-bold my-1" style={{ fontFamily: "Beau Rivage, serif", fontWeight: "500", fontStyle: "normal" }}>
+      You’re the love of my life.
+    </div>
+    <WordMareque />
+
+    {/* 打开/收起情书按钮 */}
+    <button
+      onClick={() => setShowLetter(v => !v)}
+      className="mt-6 bg-rose-500 hover:bg-rose-600 text-white font-semibold py-2 px-4 rounded-lg shadow"
+    >
+      {showLetter ? "收起情书" : "打开情书 / Open the Letter"}
+    </button>
+
+    {/* 情书正文（可滚动卡片） */}
+    {showLetter && (
+      <div className="mt-4 w-[92vw] max-w-3xl bg-white/90 backdrop-blur-md rounded-2xl shadow-xl border border-rose-200 p-5 text-left max-h-[60vh] overflow-y-auto">
+        <Letter />
+      </div>
+    )}
+  </>
+) : (
           <>
             <img
               src={lovesvg}
@@ -388,7 +410,39 @@ export default function Page() {
     </>
   );
 }
+const Letter = () => {
+  return (
+    <div className="prose prose-zinc max-w-none">
+      {/* 标题可中西双语 */}
+      <h2 className="text-2xl font-bold text-rose-600 mb-3">致最特别的你 / A la persona más especial</h2>
 
+      {/* —— 中文正文 —— */}
+      <p>Laia，谢谢你。我多么希望自己是你心里最在乎的那个人。</p>
+      <p>今天我提了过分的要求，又让你落泪，我既心疼又自责。我想写下这些话，也算是一种自我救赎。</p>
+      <p>你是我遇到的最特别的女生。你的思维方式、生活习惯、兴趣爱好，甚至成长经历，都让我感到新鲜而独特。你外表独立，内心却柔软，这让我忍不住想成为你依靠的肩膀，带给你安全感。</p>
+      <p>你追求简单的生活方式，这点也和我不谋而合。我从很早就开始折腾，早就见惯了人性的阴暗和丑陋面，尔虞我诈、唯利是图，所以我也渴望能简简单单地经营事业、经营生活。</p>
+      <p>遇见你让我感到幸运，也让我看见了自己不够成熟的一面：自卑、嫉妒、欲望与贪念，它们一度让我乱了阵脚。但正因为有你，我才不断学习成长。你对祖国的热爱，让我重新审视自己，学会用更宽广的视角去看待世界。</p>
+      <p>在西班牙的这段日子，我经历了低谷：陌生的环境、语言不通、事业受挫。是你，让我重新振作，勇敢面对生活。</p>
+      <p>我也明白，你在感情中习惯用行动代替言语，当压力来时，也会用逃避来保护自己。而且你会在我面前发脾气，展现真实的自己。其实，这让我觉得我逐渐走进了你的内心。你在我面前发脾气，说明你觉得安全，这让我反而感到高兴。</p>
+      <p>或许我的依赖与深情也曾给你带来负担，但请相信，你的真诚与热烈，让我的世界不再冰冷。</p>
+      <p>如果缘分尚在，我愿更用心去守护和经营我们的感情；倘若缘分已尽，我也真心希望你未来一切安好。无论如何，你都会是我心里最珍贵的位置。</p>
+      <p style={{ textAlign: "right", marginTop: "1rem" }}>
+        对不起，Laia。<br />
+        我爱你，Laia。<br />
+        —— 小马车 🐎
+      </p>
+
+      <hr className="my-4" />
+
+      {/* —— 西语简洁版（可保留/可删除） —— */}
+      <h3 className="text-lg font-semibold text-rose-500">Versión breve en español</h3>
+      <p>Laia, gracias. Deseo ser la persona más importante en tu corazón. Siento haber pedido demasiado hoy y haberte hecho llorar.</p>
+      <p>Eres única para mí. Aunque luces independiente, siento la ternura de tu interior y quiero ser ese apoyo que te dé seguridad. Coincido contigo en desear una vida sencilla: después de ver demasiadas sombras del mundo, también sueño con trabajar y vivir de forma simple y auténtica.</p>
+      <p>Encontrarte me hizo crecer. En España pasé momentos difíciles, y fuiste tú quien me devolvió la fuerza. Sé que te expresas más con acciones que con palabras y que, ante la presión, a veces te proteges con la evasión. Que puedas enfadarte conmigo me hace sentir que estoy entrando en tu mundo y que te sientes segura a mi lado.</p>
+      <p>Si nuestro destino continúa, cuidaré de esta relación con todo mi corazón. Si no, te deseo lo mejor, siempre. Perdóname, Laia. Te amo.</p>
+    </div>
+  );
+};
 const Footer = () => {
   return (
     <a
