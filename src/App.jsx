@@ -66,7 +66,7 @@ export default function Page() {
     src={waxSeal}
     alt="Watermark"
     className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
-               w-[75%] max-w-[420px] aspect-square object-contain opacity-15
+               w-[75%] max-w-[420px] aspect-square object-contain opacity-25
                select-none pointer-events-none z-0"
     draggable="false"
     style={{ filter: "blur(2px)" }}
