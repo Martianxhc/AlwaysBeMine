@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import Spline from "@splinetool/react-spline";
+import waxSeal from "./assets/wax-seal-gold.png";
+
+<img src={waxSeal} alt="Wax Seal" className="w-24 h-24" />
 
 // 重新用回项目里的小熊/爱心资源
 import lovesvg from "./assets/All You Need Is Love SVG Cut File.svg";
@@ -94,8 +97,7 @@ export default function Page() {
     </p>
     <p className="mt-4">对不起，Laia。<br/>我爱你，Laia。</p>
     <p className="text-right mt-6 font-semibold italic">—— 小马车 🐎</p>
-  <p className="text-right mt-6 font-semibold italic">—— 小马车 🐎</p>
-
+  
   {/* 浮动蜡印 */}
   {/* 浮动蜡印（绝对定位 + 微旋转） */}
 <div className="absolute -bottom-6 -right-6 w-24 h-24 drop-shadow-xl rotate-[-8deg]">
