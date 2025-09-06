@@ -54,70 +54,42 @@ export default function Page() {
           </>
         ) : (
           // 展开后的信件卡片（含淡入动画）
-<div className="bg-white/90 backdrop-blur-md rounded-2xl shadow-xl border border-rose-200 p-6 max-w-2xl text-left overflow-y-auto max-h-[70vh] opacity-0 scale-95 animate-fadeIn leading-relaxed">
-  <h2 className="text-2xl font-bold text-rose-600 mb-6 text-center">Para Laia</h2>
+<div className="bg-white/90 backdrop-blur-md rounded-2xl shadow-xl border border-rose-200 p-6 max-w-2xl text-left overflow-y-auto max-h-[75vh] opacity-0 scale-95 animate-fadeIn leading-relaxed">
+  {/* 西语标题 */}
+  <h2 className="text-2xl font-bold text-rose-600 mb-4 text-center">Para Laia</h2>
 
-  <p className="mb-4">
-    Laia, gracias. Cuánto deseo ser la persona que más importa en tu corazón.
-    Hoy te pedí algo exagerado y volviste a llorar por mi culpa. Me duele y me
-    siento culpable. Escribo estas palabras como una forma de redimirme.
-  </p>
-
-  <p className="mb-4">
-    Eres la chica más especial que he conocido. Tu manera de pensar, tus hábitos
-    de vida, tus intereses e incluso tu historia me resultan únicos y
-    fascinantes. Por fuera pareces muy independiente, pero siento la ternura de
-    tu interior, y eso despierta en mí el deseo de ser tu apoyo y darte
-    seguridad.
-  </p>
-
-  <p className="mb-4">
-    Tú buscas una vida sencilla, y en eso coincidimos. Yo, que desde hace
-    tiempo he visto demasiadas sombras de la humanidad —el engaño, el interés
-    egoísta, la lucha constante— también anhelo llevar una vida y un proyecto
-    simples y auténticos.
-  </p>
-
-  <p className="mb-4">
-    Encontrarte fue una suerte, y también un espejo en el que vi mis carencias:
-    inseguridad, celos, deseos y ambiciones que a veces me hicieron perder el
-    rumbo. Pero gracias a ti sigo aprendiendo y creciendo. Tu amor por tu patria
-    me hizo replantear mi interior y aprender a mirar el mundo con una visión
-    más amplia.
-  </p>
-
-  <p className="mb-4">
-    Durante estos meses en España pasé por momentos difíciles: un país
-    desconocido, el idioma, los fracasos en el trabajo. Fuiste tú quien me
-    devolvió la confianza y me animó a enfrentar la vida con valentía.
-  </p>
-
-  <p className="mb-4">
-    También sé que en el amor no hablas mucho, sino que prefieres expresarte con
-    acciones. Y cuando llega la presión, sueles huir para protegerte. Y sé que
-    conmigo te permites enfadarte, mostrar tu verdadero yo. Eso me hace sentir
-    que poco a poco he entrado en tu mundo. Que puedas enojarte conmigo
-    significa que te sientes segura, y eso, en realidad, me alegra. No quiero
-    exigirte nada; solo deseo ser mejor persona, alguien digno de tu confianza,
-    capaz de darte tranquilidad y felicidad.
-  </p>
-
-  <p className="mb-4">
-    Tal vez mi cariño y mi dependencia hayan sido una carga para ti, pero
-    créeme: tu sinceridad y tu pasión derritieron el hielo de mi corazón.
-  </p>
-
-  <p className="mb-4 font-medium text-rose-700">
-    Si nuestro destino continúa, me esforzaré por cuidar y hacer crecer nuestra
-    relación. Y si el destino llega a su fin, de todo corazón deseo que estés
-    bien. Pase lo que pase, siempre ocuparás un lugar muy especial en mi
-    corazón.
-  </p>
-
-  <p className="mt-6">Perdóname, Laia.</p>
-  <p>Te amo, Laia.</p>
-
+  {/* 西语正文 */}
+  <p>Laia, gracias. Cuánto deseo ser la persona que más importa en tu corazón.</p>
+  <p>Hoy pedí demasiado y te hice llorar; me duele y me siento culpable. Escribo estas palabras como una forma de redimirme.</p>
+  <p>Eres la chica más especial que he conocido. Tu manera de pensar, tus hábitos de vida, tus intereses e incluso tu historia me resultan únicos y fascinantes. Por fuera pareces muy independiente, pero siento la ternura de tu interior, y eso despierta en mí el deseo de ser tu apoyo y darte seguridad.</p>
+  <p>Tú buscas una vida sencilla, y en eso coincidimos. Yo, que desde hace tiempo he visto demasiadas sombras de la humanidad —el engaño, el interés egoísta, la lucha constante— también anhelo llevar una vida y un proyecto simples y auténticos.</p>
+  <p>Encontrarte fue una suerte, y también un espejo en el que vi mis carencias: inseguridad, celos, deseos y ambiciones que a veces me hicieron perder el rumbo. Pero gracias a ti sigo aprendiendo y creciendo. Tu amor por tu patria me hizo replantear mi interior y aprender a mirar el mundo con una visión más amplia.</p>
+  <p>Durante estos meses en España pasé por momentos difíciles: un país desconocido, el idioma, los fracasos en el trabajo. Fuiste tú quien me devolvió la confianza y me animó a enfrentar la vida con valentía.</p>
+  <p>También sé que en el amor no hablas mucho, sino que prefieres expresarte con acciones. Y cuando llega la presión, sueles huir para protegerte. Y sé que conmigo te permites enfadarte, mostrar tu verdadero yo. Eso me hace sentir que poco a poco he entrado en tu mundo. Que puedas enojarte conmigo significa que te sientes segura, y eso, en realidad, me alegra. No quiero exigirte nada; solo deseo ser mejor persona, alguien digno de tu confianza, capaz de darte tranquilidad y felicidad.</p>
+  <p>Tal vez mi cariño y mi dependencia hayan sido una carga para ti, pero créeme: tu sinceridad y tu pasión derritieron el hielo de mi corazón.</p>
+  <p className="font-medium text-rose-700">Si nuestro destino continúa, me esforzaré por cuidar y hacer crecer nuestra relación. Y si el destino llega a su fin, de todo corazón deseo que estés bien. Pase lo que pase, siempre ocuparás un lugar muy especial en mi corazón.</p>
+  <p className="mt-4">Perdóname, Laia.<br/>Te amo, Laia.</p>
   <p className="text-right mt-6 font-semibold">— Xiaomache 🐎</p>
+
+  {/* 分隔线 */}
+  <hr className="my-6 border-rose-300" />
+
+  {/* 中文标题 */}
+  <h2 className="text-2xl font-bold text-rose-600 mb-4 text-center">致 Laia</h2>
+
+  {/* 中文正文 */}
+  <p>Laia，谢谢你。我多么希望自己是你心里最在乎的那个人。</p>
+  <p>今天我提了过分的要求，又让你落泪，我既心疼又自责。我想写下这些话，也算是一种自我救赎。</p>
+  <p>你是我遇到的最特别的女生。你的思维方式、生活习惯、兴趣爱好，甚至成长经历，都让我感到新鲜而独特。你外表独立，内心却柔软，这让我忍不住想成为你依靠的肩膀，带给你安全感。</p>
+  <p>你追求简单的生活方式，这点也和我不谋而合。我从很早就开始折腾，早就见惯了人性的阴暗和丑陋面，尔虞我诈、唯利是图，所以我也渴望能简简单单地经营事业、经营生活。</p>
+  <p>遇见你让我感到幸运，也让我看见了自己不够成熟的一面：自卑、嫉妒、欲望与贪念，它们一度让我乱了阵脚。但正因为有你，我才不断学习成长。你对祖国的热爱，让我重新审视自己，学会用更宽广的视角去看待世界。</p>
+  <p>在西班牙的这段日子，我经历了低谷：陌生的环境、语言不通、事业受挫。是你，让我重新振作，勇敢面对生活。</p>
+  <p>我也明白，你在感情中习惯用行动代替言语，当压力来时，也会用逃避来保护自己。而且你会在我面前发脾气，展现真实的自己。其实，这让我觉得我逐渐走进了你的内心。你在我面前发脾气，说明你觉得安全，这让我反而感到高兴。</p>
+  <p>我不想强求你什么，只希望自己能成为一个更好的人，成为值得你依靠、也能给你带来轻松和快乐的人。</p>
+  <p>或许我的依赖与深情也曾给你带来负担，但请相信，你的真诚与热烈，让我的世界不再冰冷。</p>
+  <p className="font-medium text-rose-700">如果缘分尚在，我愿更用心去守护和经营我们的感情；倘若缘分已尽，我也真心希望你未来一切安好。无论如何，你都会是我心里最珍贵的位置。</p>
+  <p className="mt-4">对不起，Laia。<br/>我爱你，Laia。</p>
+  <p className="text-right mt-6 font-semibold">—— 小马车 🐎</p>
 </div>
         )}
       </div>
