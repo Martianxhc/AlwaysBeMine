@@ -65,9 +65,9 @@ export default function Page() {
   <img
     src={waxSeal}
     alt="Watermark"
-    className="absolute inset-0 m-auto w-64 h-64 opacity-10 select-none pointer-events-none"
+    className="absolute inset-0 m-auto w-[75%] h-[75%] opacity-25 select-none pointer-events-none"
     draggable="false"
-    style={{ filter: "blur(1px)" }}
+    style={{ filter: "blur(2px)" }}
   />
     {/* 西语标题 */}
     <h2 className="text-2xl font-bold text-rose-600 mb-4 text-center">Para Laia 💌</h2>
